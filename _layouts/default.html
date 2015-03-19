@@ -17,17 +17,25 @@
 
     {% include header.html %}
 
-<div id="main" class="clearfix">
-    <div class="inner-wrap">
+    <div id="main" class="clearfix">
+        <div class="inner-wrap">
   
-  <div id="primary">
-    <div id="content" class="clearfix">
-            {{ content }}
-                </div><!-- #content -->
-  </div><!-- #primary -->
+          <div id="primary">
+            <div id="content" class="clearfix">
+              <article class="page type-page status-publish hentry">
+               
+                {{ content }}
+
+                <footer class="entry-meta-bar clearfix">
+                  <div class="entry-meta clearfix">
+                  </div>
+                </footer>
+              </article>
+            </div><!-- #content -->
+          </div><!-- #primary -->
+
       </div><!-- .inner-wrap -->
   </div><!-- #main -->  
-
 
 
     {% include footer.html %}
